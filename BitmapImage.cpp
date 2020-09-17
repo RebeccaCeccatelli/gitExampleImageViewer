@@ -36,4 +36,8 @@ bool BitmapImage::save(std::string name) {
 void BitmapImage::resize(int newWidth, int newHeight) {
     width = newWidth;
     height = newHeight;
+    if (width < 1)
+        width = 1;
+    if (height < 1)
+        height = 1;
 }
