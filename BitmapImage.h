@@ -15,6 +15,7 @@ private:
     int width, height;
     char *buffer;
     std::string name;
+    char channels;
 };
 
 
