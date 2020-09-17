@@ -19,6 +19,7 @@ private:
     std::string name;
     char channels;
     char pixelDepth;
+    bool saved;
 };
 
 
