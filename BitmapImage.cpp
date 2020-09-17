@@ -12,6 +12,10 @@ bool BitmapImage::load(std::string name) {
         // load image file
         // decompress into buffer
         return true;
+    } else if (fileExt == "png") {
+        // load image file
+        // decompress into buffer
+        return true;
     }
     return false;
 }

@@ -14,9 +14,9 @@ public:
 private:
     int width, height;
     int *buffer;
-    std::string name;
     char channels;
     char pixelDepth;
+    std::string name;
 };
 
 
