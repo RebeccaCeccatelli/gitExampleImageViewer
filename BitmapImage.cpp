@@ -1,7 +1,7 @@
 #include "BitmapImage.h"
 
-BitmapImage::BitmapImage() : width(640), height(480), channels(3) {
-    buffer = new char[width * height * channels];
+BitmapImage::BitmapImage() : width(640), height(480), channels(3), pixelDepth(8) {
+    buffer = new int[width * height * channels];
 }
 
 bool BitmapImage::load(std::string name) {
