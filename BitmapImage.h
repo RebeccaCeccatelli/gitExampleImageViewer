@@ -10,13 +10,17 @@ public:
     ~BitmapImage();
 
     bool load(std::string name);
+    bool save(std::string name);
+
+    void resize(int newWidth, int newHeight);
 
 private:
     int width, height;
     int *buffer;
+    std::string name;
     char channels;
     char pixelDepth;
-    std::string name;
+    bool saved;
 };
 
 
